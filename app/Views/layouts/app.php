@@ -22,7 +22,7 @@
                     <a class="nav-link text-white" href="/">Início</a>
                 </li>
                 <li class="nav-item border-bottom">
-                    <a class="nav-link text-white" href="/sobre">Sobre</a>
+                    <a class="nav-link text-white" href="/secao/sobre">Sobre</a>
                 </li>
                 <li class="nav-item border-bottom">
                     <a class="nav-link text-white" href="/contato/create">Contato</a>
@@ -53,7 +53,7 @@
                         <a class="nav-link active text-white" href="/">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/sobre">Sobre</a>
+                        <a class="nav-link text-white" href="/secao/sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="/contatos/create">Contato</a>

@@ -3,6 +3,7 @@
 use App\Controllers\ContatoController;
 use CodeIgniter\Router\RouteCollection;
 use App\Controllers\EventoController;
+use App\Controllers\SecaoController;
 
 /**
  * @var RouteCollection $routes
@@ -23,3 +24,5 @@ $routes->get('/contato/(:num)',[ContatoController::class,'showContact'],['as' =>
 $routes->get('/contatos/create',[ContatoController::class,'contactForm'],['as' => 'contatatos.create']);
 $routes->post('/contatos/insert',[ContatoController::class,'insertContact'],['as' => 'contatos.insert']);
 $routes->post('/contatos/delete/(:num)',[ContatoController::class,'deleteContact'],['as' => 'contatos.delete']);
+
+$routes->get('secao/sobre',[SecaoController::class,'sobre'],['as' => 'secao.sobre']);
