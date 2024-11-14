@@ -19,13 +19,13 @@
         <div class="offcanvas-body">
             <ul class="nav flex-column">
                 <li class="nav-item border-bottom">
-                    <a class="nav-link text-white" href="/eventos">Início</a>
+                    <a class="nav-link text-white" href="/">Início</a>
                 </li>
                 <li class="nav-item border-bottom">
                     <a class="nav-link text-white" href="/sobre">Sobre</a>
                 </li>
                 <li class="nav-item border-bottom">
-                    <a class="nav-link text-white" href="/contato">Contato</a>
+                    <a class="nav-link text-white" href="/contato/create">Contato</a>
                 </li>
                 <li class="nav-item border-bottom">
                     <a class="nav-link text-white" href="/perfil">Perfil</a>
@@ -44,19 +44,19 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <a href="<?= site_url('eventos') ?>" class="navbar-brand">
+            <a href="<?= site_url('/') ?>" class="navbar-brand">
                 <i class="bi bi-calendar-event" style="font-size: 30px; color: #fff;"></i>
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="/eventos">Início</a>
+                        <a class="nav-link active text-white" href="/">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="/sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/contato">Contato</a>
+                        <a class="nav-link text-white" href="/contatos/create">Contato</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="/perfil">Perfil</a>

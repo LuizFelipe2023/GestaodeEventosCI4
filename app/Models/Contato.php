@@ -18,10 +18,7 @@ class Contato extends Model
 
   
     protected array $casts = [
-        'cpf'      => 'string', 
-        'telefone' => 'string',  
-        'email'    => 'string',
-        'corpo'    => 'string',  
+        
     ];
 
   
@@ -34,7 +31,7 @@ class Contato extends Model
    
     protected $validationRules = [
         'nome'     => 'required|min_length[2]|max_length[255]',
-        'cpf'      => 'required|exact_length[11]', 
+        'cpf'      => 'required', 
         'telefone' => 'required|min_length[10]|max_length[15]',  
         'email'    => 'required|valid_email|max_length[255]',
         'corpo'    => 'required|min_length[4]|max_length[500]', 
@@ -49,7 +46,6 @@ class Contato extends Model
         ],
         'cpf' => [
             'required'        => 'O CPF é obrigatório.',
-            'exact_length'    => 'O CPF deve ter exatamente 11 caracteres.',
         ],
         'telefone' => [
             'required'        => 'O telefone é obrigatório.',

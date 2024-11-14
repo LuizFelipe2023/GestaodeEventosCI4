@@ -22,7 +22,7 @@ class CreateContatosTable extends Migration
             ],
             'cpf' => [
                 'type'       => 'VARCHAR',
-                'constraint' => 11,
+                'constraint' => 14,
                 'null'       => false,
             ],
             'telefone' => [

@@ -86,9 +86,8 @@ class ContatoController extends BaseController
                     ->with('error', 'Erro ao tentar deletar o contato.');
             }
 
-            return redirect()
-                ->back()
-                ->with('success', 'Contato deletado com sucesso!');
+            return redirect()->to('/contatos')->with('success','Contato Deletado com Sucesso');
+                
 
         } catch (\Exception $e) {
             log_message('error', $e->getMessage());

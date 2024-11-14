@@ -7,9 +7,9 @@ use App\Controllers\EventoController;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
 
-$routes->get('eventos', [EventoController::class, 'index'], ['as' => 'eventos.index']); 
+
+$routes->get('/', [EventoController::class, 'index'], ['as' => 'eventos.index']); 
 $routes->get('eventos/show/(:num)', [EventoController::class, 'showEvent'], ['as' => 'eventos.show']);
 $routes->get('eventos/create', [EventoController::class, 'createForm'], ['as' => 'eventos.create']); 
 $routes->post('eventos/store', [EventoController::class, 'insertEvent'], ['as' => 'eventos.store']); 
